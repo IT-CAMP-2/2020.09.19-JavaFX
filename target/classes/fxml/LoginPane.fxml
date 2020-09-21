@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import java.net.URL?>
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.172-ea"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pl.camp.it.controllers.LoginController2">
+
+    <VBox AnchorPane.topAnchor="10.0"
+          AnchorPane.bottomAnchor="10.0"
+          AnchorPane.rightAnchor="10.0"
+          AnchorPane.leftAnchor="10">
+        <HBox>
+            <Label prefWidth="60.0" text="Login"/>
+            <TextField fx:id="loginTextField"/>
+            <padding>
+                <Insets bottom="10.0"/>
+            </padding>
+        </HBox>
+        <HBox>
+            <Label prefWidth="60.0" text="Hasło"/>
+            <TextField fx:id="passwordTextField"/>
+            <padding>
+                <Insets bottom="10.0"/>
+            </padding>
+        </HBox>
+        <HBox>
+            <Label prefWidth="60.0" text="Wiek"/>
+            <TextField fx:id="ageTextField"/>
+            <padding>
+                <Insets bottom="10.0"/>
+            </padding>
+        </HBox>
+        <CheckBox text="Potwierdź" fx:id="confirmationCheckbox">
+            <padding>
+                <Insets bottom="10.0"/>
+            </padding>
+        </CheckBox>
+        <BorderPane prefHeight="34.0" prefWidth="231.0">
+            <center>
+                <Button text="OK" BorderPane.alignment="CENTER" onAction="#okClick" fx:id="confirmButton"/>
+            </center>
+        </BorderPane>
+    </VBox>
+
+    <stylesheets>
+        <URL value="@simple.css"/>
+    </stylesheets>
+
+</AnchorPane>

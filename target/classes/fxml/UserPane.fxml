@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.camp.it.controllers.UserPaneController">
+   <children>
+      <VBox>
+         <children>
+            <HBox>
+               <children>
+                  <Label prefWidth="60.0" text="Login:" />
+                  <Label fx:id="loginLabel" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label prefWidth="60.0" text="Hasło:" />
+                  <Label fx:id="passLabel" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label prefWidth="60.0" text="Wiek:" />
+                  <Label fx:id="ageLabel" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
